@@ -37,6 +37,7 @@ async function uploadFiles({ lokalise, languageCodes, projectId, filePath }) {
         lang_iso: lang
       });
       console.log("Uploadeed language file " + lokaliseFilename);
+      console.log(data);
     } catch (error) {
       console.error(`Error reading language file ${lang}: ${error.message}`);
     }
