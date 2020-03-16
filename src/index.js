@@ -35,7 +35,8 @@ async function uploadFiles({ lokalise, languageCodes, projectId, filePath }) {
         data: buff.toString("base64"),
         filename: lokaliseFilename,
         lang_iso: lang,
-        replace_modified: true
+        replace_modified: true,
+        convert_placeholders: false
       });
       console.log("Uploadeed language file " + lokaliseFilename);
       console.log(data);
